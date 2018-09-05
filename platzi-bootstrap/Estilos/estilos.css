@@ -1,0 +1,108 @@
+.text-platzi{
+    
+    
+    color:#97c93e!important;
+    
+}
+
+#footer{
+    
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+
+}
+
+.btn-platzi{
+    
+    background-color: #97c93e;
+    color:white;
+    
+}
+.btn-platzi:hover{
+    
+    background-color: #82ad36;
+   
+    
+}
+#header img{
+    
+    width: 80px;
+    
+}
+
+/*En el main, agarre las imagenes que esten dentro del carrousel*/
+#main .imagenes-del-carrousel img {
+    
+    /*EL alto maximo de la imagen va a ser
+    70 view*height  es decir el 70% de la vista
+    del navegador 
+    
+    */
+    max-height: 70vh;
+    
+    
+    /*Ajusta la imagen al contenedor, es decir
+    si tengo algo mas pequeño q la imagen ella hace como
+    un zoom hacia atras y se ajusta, y no se pone fea*/
+    object-fit: cover;
+    
+    /*Filtrar la imagen y ponerla en escala de grises
+    para que no muestre su color vivo*/
+    filter: grayscale(70%);
+    
+}
+
+#carousel{
+    
+    position: relative;
+    
+}
+
+/*si olvido esto, el de arriba esta relative
+y este absolute para entenderlo ver
+
+https://es.stackoverflow.com/questions/37930/cual-es-la-diferencia-entre-position-relative-position-absolute-y-position
+*/
+#carousel .overlay{
+    
+    position: absolute;
+    
+    /*0 todos para que se ubique en el incio
+    del carousel y no corrido*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    
+}
+
+
+
+#carousel .overlay .container,
+#carousel .overlay .row
+{
+   
+    height: 100%;
+    
+}
+
+#lugar-fecha{
+    
+    background-color: #343a40;
+    color:white;
+    
+}
+/*Maximo ancho de la imagen 100%*/
+#lugar-fecha img{
+    
+    
+    max-width: 100%;
+    
+}
+
+#footer a{
+    
+    color:white;
+    
+}

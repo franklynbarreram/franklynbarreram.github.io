@@ -1,0 +1,242 @@
+- div: Puede tener 
+		
+	#Clases:
+ 		-container: Es un marco donde va la pagina, se adapta a todas las pantallas
+			   pero no abarca el 100%, tiene como un padding en todos sus lados
+		-container-fluid: Es igual al container, pero abarca el 100%
+		
+		-row: Es una fila, puede tener 12 columnas como maximo. sirve para separar
+		      los contenidos de la pagina en filas con columnas y que quede bien 
+		      seccionado
+		
+		-col: una columna, debe ir dentro del row, si se usa asi todo el contenido
+		      en la fila se reparte equitativamente
+
+		-col-(numeroaqui): una fila tiene 12 columnas, al yo especificar cuantas 
+				   columnas quiero que abarque este espacio ya no se 
+				   repartira equitativamente	
+				
+				#Ejm:   <div class="row">
+						
+					<div class="col-3">1</div>
+					<div class="col">2</div>
+
+					</div>
+				Como una fila abarca 12 columnas, aqui le digo que la primera
+				columna abarque 3 columnas, es decir la primera abarca 3
+				y la segunda columna abarca 9, si tengo mas elementos y no
+				le especifico cuantas columnas agarrar eso se repartira 
+				equitativamente( los 9 restantes) ya que 3 estan comprometidos
+				si o si por el col-3
+		-NOTA: si me paso de las 12 columnas, y pongo por ejemplo 13, bootstrap por
+			defecto lo pone por debajo, no aguanta ponerlo en una sola linea
+
+		#Tipos de col
+
+			-col-(numero): Numero de columnas que va abarcar en una pantalla
+					  <=576px
+
+			-col-sm-(numero): Numero de columnas que va abarcar en una pantalla
+					  >=576px
+
+			-col-md-(numero): Numero de columnas que va abarcar en una pantalla
+					  >=768px
+
+			-col-lg-(numero): Numero de columnas que va abarcar en una pantalla
+					  >=992px
+
+			-col-xl-(numero): Numero de columnas que va abarcar en una pantalla
+					  >=1200px
+
+			NOTA: Si coloco col-lg , col-md etc sin ningun numero, es que todo
+			      se reparta equitativamente
+
+			#ejm: Esto se puede anidar <div class="col-12 col-lg-3"></div>
+			      Le estoy diciendo que en pantallas superior a 992px use
+			      3 columnas, en las menores a 576 que abarque 12 que es todo
+			      el ancho
+	
+		 	-offset-(numero): espacios en blanco a la izquierda, es decir
+					  si quiero una fila con 3 espacios en blanco
+					  y luego si una columna seria offset-3 col-9
+
+			-offset-md-(numero): tambien esta para lg,xl,sm para todas las 
+					     resoluciones, para especificarle en que 
+					     resolucion dejar espacios en blanco
+
+
+			-pb-(numero): padding bottom
+			-pt-(numero): padding top
+			-pl-(numero): padding left
+			-pr-(numero): padding right
+
+			
+			-mb-(numero): margin bottom
+			-mt-(numero): margin top
+			-ml-(numero): margin left
+			-mr-(numero): margin right
+
+			NOTA: eso se le pone de clase al div que quiera los padding o margin
+
+-Para los NAV:
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+puedo ponerle navbar-light para ser clarito, y bg-light para el background oscuro
+
+- navbar-light: el nav sea claro
+- bg-light: background claro	
+
+- navbar-dark: el nav sea oscuro
+- bg-dark: background oscuro
+
+-mr-auto: margin right automatico, tira todo a la izquierda .. Calcula todo el margen
+	  sobrante de la derecha y pone todo a la izquierda es decir, ve que espacio
+	  consume el contenido y el resto de espacio de la derecha lo pone como margen
+ 	  y todo el contenido va a parar a la izquierda
+
+-ml-auto: margint left automatico, tira todo a la derecha.. Calcula todo el margen
+	  sobrante de la izquierda y pone todo a la derecha es decir, ve que espacio
+	  consume el contenido y el resto de espacio de la izquierda lo pone como margen
+	  y todo el contenido va a parar a la derecha
+
+ejm:
+
+<ul class="navbar-nav mr-auto">
+
+NOTA: PAra que el nav se quede fijo  debe agregarsele fixed-top . pero es mejor ponerle sticky-top
+
+<nav class="navbar fixed-top">
+
+
+-Carrousel: para que no haga pausas cuando ponga el mouse arriba de la imagen
+	    se le agrega data-pause="false"
+
+	#ejm:  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+     
+
+
+
+PARA EL BUG <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+el truco esta en el data-target="#navbar" tiene que ser igual al id del div
+en donde estan las opciones de >La Conferencia. Oradores, y los demas
+
+para el bug es simplemente buscar ese boton y cambiarle el data-target que tiene y ponerle 
+#id_de_div_que_contiene_el_ul_del_nav
+
+
+	sale el contenido del nav a la izquierda, si lo coloco ml-auto lo manda a la derecha
+
+
+****************** 	OCULTAR Y MOSTRAR TEXTO **********
+
+	-d-none: display none, agrego esa clase y se oculta
+	-d-md-none: a partir de los medianos no se muestra
+		  #asi para sm, lg, xl
+	
+	-d-block: que se vuelva a mostrar "display block"
+	-d-md-block: a partir del mediano haga display block y se muestra
+			#asi para sm,lg,xl
+
+	#Ejm:  <p class="d-none d-md-block">
+        No se muestre nada, pero a partir de pantalla md muestre display block y aparece
+	todo de nuevo, pero de md hacia abajo se oculta
+
+***************** ORIENTACION DE TEXTO ************
+
+  -text-center: alinea en el centro
+  -text-md-center: a partir de los medianos centra
+                  #asi con lg,sm,xl
+
+  -text-right: alinea a la derecha
+  -text-md-center: a partir de los medianos alinea a la derecha
+                  #asi con lg,sm,xl
+
+	#ejm: <div class="text--md-right text-center">
+
+	A partir de md alinea a la derecha, de md hacia abajo todo en el centro
+                        
+
+  -text-uppercase: pone todo e texto de ese div en mayuscula
+	
+************** FORMULARIOS ****************************
+
+  -form-row: una fila donde meto formularios, deben tener dentro un div con col    
+
+  -form-group : a los formularios, los separa como por bloques de grupos (todas las columnas de 
+                un formulario debe tener eso)
+
+  -form-control: se identifica con esto que es formulario de bootstrap
+
+  -form-control-lg: formulario de tamaño grande
+
+  -form-text: texto para formulario
+
+  -text-muted: texto en color gris como deshabilitado
+
+
+************ BOTONES **************
+
+btn btn-block: agarra todo el ancho de dicho bloque
+
+
+**********  tooltip ***********+
+
+MOSTRAR MENSAJES BONITOS ARRIBA DE TEXTOS, 
+
+ejm :  <abbr data-toggle="tooltip" title="Dar charlas"  data-placement="bottom">   <h2>orador</h2></abbr>
+
+en orador aparecera un mensaje que dice dar charlas, pero debo decirle a js que active todos
+los letreros, hago un js y lo importo q tenga: 
+
+$(function(){
+    
+    
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+
+********* SCROLLSPY **********
+
+Es saber en que lugar de la pagina se encuentra el usuario, para asi poder poner en el navbar
+un hover de en que posicion esta parado
+
+ver video de bootstrap numero 12- Scrollspy posicion del usuario en la pagina - Conociendo la ubicación del usuario en el header en Curso de Bootstrap
+
+ya que hay unos detalles q no debo pasar en alto sobre unos espacios en el header que no sirve el scrollspy
+
+
+
+********* MODAL ****************
+
+NOTAZO: El modal siempre debe ir despues de todo , hasta del footer
+debo ir a bootstrap copiar el modal 
+
+https://getbootstrap.com/docs/4.1/components/modal/
+
+para hacer uso de el, en el elemento que quiero usarlo por ejemplo en un boton
+
+@debe llevar data-target="#id_del_modal" y data-toggle="modal" (siempre es asi el data toggle)
+  <a class="nav-link text-platzi" href="#" data-target="#modal-compra" data-toggle="modal">Comprar tickets</a>
+
+
+Este es un modal para el ejemplo de arriba
+
+<div class="modal fade" id="modal-compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

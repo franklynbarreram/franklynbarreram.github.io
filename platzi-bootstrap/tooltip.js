@@ -1,0 +1,11 @@
+
+/*AGARRE TODOS LOS ELEMENTOS QUE POSEAN
+EL ATRIBUTO DATA-TOGGLE="TOOLTIP" Y ACTIVELOS
+
+Y MAGICAMENTE TODOS LOS TOOLTIP SIRVEN
+*/
+$(function(){
+    
+    
+    $('[data-toggle="tooltip"]').tooltip()
+})

@@ -1,0 +1,112 @@
+#header img{
+/*o poner   width:30*/
+   
+ max-height: 30px;
+    color:white;
+    background-position: white;
+    
+}
+
+
+#main .contenedor-principal{
+    
+    position: relative;
+    color: white;
+}
+
+#nombre{
+    
+    text-shadow: 1.2px 2px 1px #007f7f;
+}
+#main .fondo-main{
+    
+    /*EL alto maximo de la imagen va a ser
+    70 view*height  es decir el 70% de la vista
+    del navegador 
+    
+    */
+    background: url(../Assets/4.jpg) no-repeat center center fixed;
+  
+    background-size: cover;
+    /*  max-height: 80vh;*/
+    height: 92vh;
+    position: relative;
+
+    /*Ajusta la imagen al contenedor, es decir
+    si tengo algo mas pequeño q la imagen ella hace como
+    un zoom hacia atras y se ajusta, y no se pone fea*/
+    object-fit: cover;
+    
+    
+    /*Filtrar la imagen y ponerla en escala de grises
+    para que no muestre su color vivo*/
+    filter: grayscale(70%); 
+
+  
+    
+    
+}
+
+
+
+
+.fondo-main{
+    
+    position: relative;
+}
+
+#main .fondo-main .overlay{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+
+.foto-carnet{
+    
+    filter: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+     right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.foto-carnet img{
+    
+    height: 40vh;
+    width: 40vh;
+  
+    border-radius: 50%;
+       object-fit: cover;
+    position: relative;
+    filter: none;
+      left: 0;
+    top: 0;
+     right: 0;
+    bottom: 0;
+  
+}
+#footer{
+    
+    color: white
+    
+}
+
+#icono{
+    
+    font-size: 50px;
+   /* 
+    padding:11px 15px;
+    background-color:rgba(255, 255, 255, 0.89);
+    color:black;
+    border-radius: 100px 100px 100px 100px;*/
+    
+}

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="Estilos/estilos.css">
+    <title>PlatziConf Hawaii</title>
+  </head>
+  
+  <body data-spy="scroll" data-target="#menu-contenido" data-offset="57">
+
+<!-- HEADER -->   
+
+<!--poner fixed-top al class del nav para q no se mueva
+el nav,  sticky-top mantener el nav fijo sin moverse-->
+<nav id="header" class=" navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+<div class="container">
+ 
+ <!--AQUI SE MODIFICA PARA EL LOGO-->
+  <a class="navbar-brand" href="#">
+    
+    <img  class="align-middle" src="assets/images/platzi-logo.png" alt="platzi-logo">
+    
+    
+     <spam  class="d-inline align-middle" style="font-family: Lato,sans-serif">Conf Hawaii</spam>
+  
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="menu-contenido">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#main">La conferencia <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#oradores">Los oradores</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#lugar-fecha">El lugar y la fecha</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-platzi" href="#" data-target="#modal-compra" data-toggle="modal">Comprar tickets</a>
+      </li>
+    </ul>
+  
+      
+  </div>
+</div>
+</nav>
+   
+<!-- /HEADER -->
+
+<!--MAIN -->
+  
+  <main id="main">
+      
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+      <div class="carousel-inner imagenes-del-carrousel">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/images/hawaii.jpg" alt="Hawaii">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/hawaii2.jpg" alt="Hawaii 2">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/hawaii3.jpeg" alt="Hawaii 3">
+        </div>
+        
+          <div class="overlay">
+        
+            <div class="container">
+               <!--Para alinear todo horizontalmente
+                en la fila-->
+                <div class="row align-items-center">
+                   
+                   <!-- para que abarque de la mitad hacia la derecha de la pantalla, para eso agrego que abarque 6 columnas, y rellene 6 a la izquierda vacias-->
+                    <div class="col-md-6 offset-md-6 text-md-right text-center">
+                        
+                        <h1>Platzi Conf Hawaii</h1>
+                        <p class="d-none d-md-block">Platzi Conf llega por primera vez a Hawaii! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
+                        Ven a conocer miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos! </p>
+                   
+                        <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+                        <button type="button" class="btn btn-platzi"  data-target="#modal-compra" data-toggle="modal">Comprar tickets</button>
+                      </div>
+                </div>
+            </div>
+          </div>
+     
+      </div>
+
+    </div>
+    
+  
+
+</main>
+<!--/MAIN-->   
+   
+   
+<!--ORADORES-->
+
+<section id="oradores" class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center text-uppercase">
+                <small>Conoce a los</small>
+                <h2>Oradores</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                
+                <div class="card">
+                  <img class="card-img-top" src="assets/speakers/sacha.jpg" alt="foto de sacha">
+                  <div class="card-body">
+                   
+                    <div class="badges mb-2">
+                        
+                        <span class="badge badge-warning">JavaScript</span>
+                    
+                          
+                        <span class="badge badge-info">React</span>
+                    </div>
+                    
+                    <h5 class="card-title">Sacha Lifszyc</h5>
+                    
+                  
+                    
+                    <p class="card-text">Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. </p>
+                   
+                  </div>
+                </div>
+
+                
+            </div>
+            
+         
+            
+             <div class="col-12 col-md-6 col-lg-4 mb-4">
+                
+                <div class="card">
+                  <img class="card-img-top" src="assets/speakers/freddy.jpeg" alt="foto de freddy">
+                  <div class="card-body">
+                   
+                    <div class="badges mb-2">
+                        
+                        <span class="badge badge-secondary">Negocios</span>
+                    
+                          
+                        <span class="badge badge-danger">Startups</span>
+                    </div>
+                    
+                    
+                    <h5 class="card-title">Freddy Vega </h5>
+                    <p class="card-text">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí" claro solo a veces no todo el tiempo.
+
+                    </p>
+                   
+                  </div>
+                </div>
+
+                
+            </div>
+            
+             <div class="col-12 col-md-6 col-lg-4 mb-4">
+                
+                <div class="card">
+                  <img class="card-img-top" src="assets/speakers/leonidas2.jpeg" alt="foto de leonidas">
+                  <div class="card-body">
+                   
+                    <div class="badges mb-2">
+                        
+                        <span class="badge badge-warning">JavaScript</span>
+                    
+                          
+                        <span class="badge badge-info">React</span>
+                    </div>
+                    
+                    <h5 class="card-title">Leonidas Esteban</h5>
+                    <p class="card-text">Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia</p>
+                 
+                  </div>
+                </div>
+
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                
+                <div class="card">
+                  <img class="card-img-top" src="assets/speakers/cvander.jpeg" alt="foto de christian">
+                  <div class="card-body">
+                   
+                                     
+                    <div class="badges mb-2">
+                        
+                        <span class="badge badge-secondary">Negocios</span>
+                    
+                          
+                        <span class="badge badge-danger">Startups</span>
+                    </div>
+                    
+                    <h5 class="card-title">Christian Van Der H. Esteban</h5>
+                    <p class="card-text">es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos </p>
+                 
+                  </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /ORADORES -->
+
+
+<!-- LUGAR Y FECHA-->
+
+<section id="lugar-fecha">
+    
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 pl-0 pr-0"><img src="assets/images/honolulu.jpg" alt="honolulu"></div>
+            <div class="col-12 col-md-12 col-lg-6 pt-4 pb-4">
+                
+                <h2 class="">Honolulu - Octubre 2025</h2>
+                <p>Honolulu o Honolulú es la capital y localidad más grande del estado de Hawái, en los Estados Unidos.nota Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).</p>
+            
+                <a href="https://es.wikipedia.org/wiki/Honolulu" class="btn btn-outline-light">Conoce más</a>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<!-- /LUGAR Y FECHA-->
+
+
+<!-- CONVIERTETE EN ORADOR-->
+
+<section id="conviertete-en-orador" class="pt-3 pb-3">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col text-uppercase text-center">
+                
+                <small> Conviértete en un </small>
+                <abbr data-toggle="tooltip" title="Dar charlas"  data-placement="bottom">   <h2>orador</h2></abbr>
+             
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col text-center">
+                    
+                    <!-- se activa desde el JS-->
+                    Anótate como orador para dar una charla <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>. Cuéntanos de qué quieres hablar!
+                    
+                    
+            </div>
+        </div>
+        <!-- col-sm-10 offset-sm-1-->
+        <div class="row">
+            <div class="col col-md-10 offset-md-1 pt-2 col-lg-8 offset-lg-2">
+                
+               <form>
+                  <div class="form-row">
+                    <div class="form-group col-12 col-md-6">
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                  </div>
+                  
+                  <div class="form-row">
+                <div class="form-group col">
+                  <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
+                      <small class="form-text text-muted">
+                    Recuerda incluir un título para tu charla
+                  </small>
+                </div>
+              </div>
+               
+               <div class="form-row">
+                   <div class="col">
+                   <button type="button" class="btn btn-platzi btn-block">Enviar
+                       
+                   </button>
+                   </div>
+               </div>
+                
+                </form>
+                
+            </div>
+        </div>
+    
+    </div>
+    
+</section>
+
+<!-- /CONVIERTETE EN ORADOR -->
+
+
+<!-- FOOTER -->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container text-center">
+        
+           <div class="row">
+               
+               <div class="col-12 col-lg">
+                   
+                   <a href="#">Preguntas frecuentes</a>
+                   
+               </div>
+               
+               <div class="col-12 col-lg">
+                   <a href="#">Contáctanos</a>
+               </div>
+               
+               <div class="col-12 col-lg">
+                   <a href="#">Prensa</a>
+               </div>
+               
+               <div class="col-12 col-lg">
+                   <a href="#">Conferencias</a>
+               </div>
+               
+               <div class="col-12 col-lg">
+                   <a href="#">Términos y condiciones</a>
+               </div>
+               <div class="col-12 col-lg">
+                   <a href="#">Privacidad</a>
+               </div>
+               <div class="col-12 col-lg">
+                   <a href="#">Estudiantes</a>
+               </div>
+               
+           </div>
+           
+        </div>
+    </footer>
+    <!-- /FIN FOOTER -->
+    
+    
+    <!-- MODAL, NOTA SIEMPRE VAN FUERA DE TODO, AL NIVEL DEL BODY -->
+    
+    <!-- Modal -->
+<div class="modal fade" id="modal-compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Comprar Tickets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form action="">
+           <div class="form-row">
+               <div class="form-group col">
+                   
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                   
+               </div>
+           </div>
+       </form>
+       
+       
+       <!-- ALERTA -->
+         <div class="alert alert-warning" role="alert">
+          Recibirás un correo de confirmación si sales sorteado
+        </div>
+       <!-- /ALERTA -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-platzi">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /MODAL -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="tooltip.js"></script>
+  </body>
+</html>
