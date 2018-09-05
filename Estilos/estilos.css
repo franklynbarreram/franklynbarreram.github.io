@@ -48,7 +48,18 @@
 }
 
 
+#footer a{
+    
+    text-decoration: none;
+    color:white;
+    
+}
 
+#footer a:hover{
+    
+    color: #17a2b8;
+    
+}
 
 .fondo-main{
     
@@ -93,6 +104,12 @@
      right: 0;
     bottom: 0;
   
+}
+
+#acerca-de-mi{
+    
+    background-color: #f8f9fa;
+    
 }
 #footer{
     
