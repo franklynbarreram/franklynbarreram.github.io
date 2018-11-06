@@ -1,0 +1,213 @@
+#header img{
+/*o poner   width:30*/
+   
+ max-height: 30px;
+    color:white;
+    background-position: white;
+    
+}
+
+
+#main .contenedor-principal{
+    
+    position: relative;
+    color: white;
+}
+.finita{
+    
+    font-weight: 100;
+    font-size: 19px;
+}
+
+.gris-oscuro{
+    
+    color: #4f4f4f;
+}
+
+.minus-finita{
+    
+    font-weight: 100;
+}
+.flecha{
+    
+    font-size: 30px;
+    padding-top: 80px    
+}
+
+.coral{
+    
+    background-color: #ff6f5a!important;
+    border-color: #ff6f5a!important
+}
+#nombre{
+    
+    /*text-shadow: 1.2px 2px 1px #007f7f;*/
+           font-family: Berlin Sans FB Demi;
+    font-weight: 800;
+    font-size: 60px;
+}
+#main .fondo-main{
+    
+    /*EL alto maximo de la imagen va a ser
+    70 view*height  es decir el 70% de la vista
+    del navegador 
+    
+    */
+    background: url(../Assets/fondo2.png) no-repeat center center fixed;
+  
+    background-size: cover;
+    /*  max-height: 80vh;*/
+    height: 92vh;
+    position: relative;
+
+    /*Ajusta la imagen al contenedor, es decir
+    si tengo algo mas pequeño q la imagen ella hace como
+    un zoom hacia atras y se ajusta, y no se pone fea*/
+    object-fit: cover;
+    
+    
+    /*Filtrar la imagen y ponerla en escala de grises
+    para que no muestre su color vivo*/
+    filter: grayscale(80%); 
+
+  
+    
+    
+}
+
+
+#footer a{
+    
+    text-decoration: none;
+    color:white;
+    
+}
+
+#footer a:hover{
+    
+    color: #17a2b8;
+    
+}
+
+.fondo-main{
+    
+    position: relative;
+}
+
+#main .fondo-main .overlay{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+
+.foto-carnet{
+    
+    filter: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+     right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.foto-carnet img{
+    
+    height: 40vh;
+    width: 40vh;
+  
+    border-radius: 50%;
+       object-fit: cover;
+    position: relative;
+    filter: none;
+      left: 0;
+    top: 0;
+     right: 0;
+    bottom: 0;
+    border: 10px solid #ffffff61;
+  
+}
+
+.circulo{
+    
+    padding-top: 50px;
+    color: #17a2b8!important;
+    
+}
+
+.info{
+   color: #17a2b8!important;
+    
+}
+.d-ib{
+    
+    display: inline-block;
+    
+}
+.minuscula{
+    
+    text-transform: initial!important;
+}
+.mayus{
+    
+    text-transform: uppercase;
+    /*font-weight: 100;*/
+    font-weight: 400;
+    color: #605d5d;
+    
+}
+
+.gris{
+    
+    color:gray;
+    
+}
+
+.parrafo{
+    
+    font-size: 17px;
+}
+.name{
+    
+    font-weight: 100
+}
+#acerca-de-mi{
+    
+    background-color: white;
+    /*padding-right:100px;
+    padding-left:100px;*/
+    
+}
+
+#portafolio{
+    
+    background-color: #f8f9fa;
+    padding-right:100px;
+    padding-left:100px;
+    
+}
+
+
+#footer{
+    
+       /* padding-right:100px;
+    padding-left:100px;*/
+}
+
+#icono{
+    
+    font-size: 50px;
+   /* 
+    padding:11px 15px;
+    background-color:rgba(255, 255, 255, 0.89);
+    color:black;
+    border-radius: 100px 100px 100px 100px;*/
+    
+}
