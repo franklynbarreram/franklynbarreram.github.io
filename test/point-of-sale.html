@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Aliant Payments</title>
+    <meta name="description" content="Aliant Payments">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 11]> <p class="browsehappy"> You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. </p> <![endif]-->
+    <div class="page-point-of-sale">
+        <section class="c-hero hero is-fullheight">
+            <div class="hero-head">
+                <header class="c-header">
+                    <nav id="mainNavbar" class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
+                        <div class="container">
+                            <div class="navbar-brand">
+                                <a href="./" class="navbar-item" data-animation-classes="fadeInDown">
+                                    <img src="images/aliant-logo.png" alt="aliant logo">
+                                </a>
+                                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div id="navMenu" class="navbar-menu">
+                                <div class="navbar-end">
+                                    <div class="navbar-item" data-animation-classes="fadeInDown">
+                                        <a href="./payment-gateway.html" target="" class="has-text-white">
+                                            <span class="menu__text">Payment Gateway</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item" data-animation-classes="fadeInDown">
+                                        <a href="./cryptobucks.html" target="" class="has-text-white">
+                                            <span class="menu__text">Crypto Payments</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item navbar-item--current" data-animation-classes="fadeInDown">
+                                        <a href="./point-of-sale.html" target="" class="has-text-white">
+                                            <span class="menu__text">Point of Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item" data-animation-classes="fadeInDown">
+                                        <a href="./developers.html" target="" class="has-text-white">
+                                            <span class="menu__text">Developers</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item init-animated" data-animation-classes="fadeInDown">
+                                        <!--
+                                          <a href="https://aliantpay.io" target="_blank" class="has-text-white link--highlighted">
+                                       -->
+                                        <a class="has-text-white link--highlighted">
+                                           <span class="menu__text">Sign In</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="c-developers">
+                        <div class="c-developers__content">
+                            <h1 class="is-size-3 is-size-1-fullhd has-text-weight-light is-uppercase spaced-title">Point of sale</h1>
+                            <div class="has-text-white">Process payments seamlessly with Aliant’s equipment or yours.
+                                <br>Sell your products effortlessly with Aliant Payments.<p></p>
+                            </div>
+                            <button class="button is-cta is-primary is-rounded is-uppercase modal-button" data-target="modal-ter">
+                                Contact us now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-scroll-button">
+                <a href="#after-hero-content" class="image">
+                    <img class="animated infinite bounce slow" src="images/scroll-icon.png" alt="scroll icon">
+                </a>
+            </div>
+        </section>
+
+        <div id="after-hero-content" style="padding-top: 50px;">
+            <section class="container section how-it-works__content">
+                <div class="point-of-sale-title__content">
+                    <h2 class="is-size-2 has-text-link has-text-centered has-text-weight-light">
+                        How It Works
+                    </h2>
+                    <p class="has-text-centered has-text-black">Running your business is hard enough, consider your payments handled.</p>
+                </div>
+                <div class="how-it-works__icons columns is-centered is-multiline is-mobile">
+                    <div class="how-it-works__item point-of-sale-aliants column">
+                        <p>
+                            <strong>Aliant’s
+                                <br>Point of Sale</strong>
+                        </p>
+                        <p class="has-text-black">Aliant for retail offers various POS options that are built and designed for your storefront and back office</p>
+                    </div>
+                    <div class="how-it-works__item point-of-sale-existing column">
+                        <p>
+                            <strong>Existing
+                                <br>Equipment</strong>
+                        </p>
+                        <p class="has-text-black">Already have hardware? No problem! Aliant has got you covered. Our in-house operations team can reprogram your existing equipment without any headaches of learning something new.</p>
+                    </div>
+                    <div class="how-it-works__item point-of-sale-payments column">
+                        <p>
+                            <strong>All Payments,
+                                <br>All the Time</strong>
+                        </p>
+                        <p class="has-text-black">You have the products and services your customers love, let them pay the way they like: EMV, NFC, Mag Stripe, Gift Card, Cash, Credit Card, PIN debit, Crypto.</p>
+                    </div>
+                    <div class="how-it-works__item point-of-sale-fast-approval column">
+                        <p>
+                            <strong>Fast
+                                <br>Approval</strong>
+                        </p>
+                        <p class="has-text-black">Time is of the essence; we’ll get you up and running within 24 hours.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="point-of-sale-benefits">
+                <div class="container">
+                    <h1 class="is-size-3 is-size-1-fullhd has-text-weight-light has-text-primary has-text-centered">Benefits</h1>
+                    <div class="point-of-sale-benefits__columns columns is-variable is-7">
+                        <div class="column is-6">
+                            <ul class="c-features-list has-text-white c-features-list--large-spaced">
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    <dl><dt>Manage Your Inventory</dt>
+                                        <dd>Expedite your sale process by using our POS devices to receive orders and scan new inventory when it arrives. Track your inventory so you know when to restock.</dd>
+                                    </dl>
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    <dl><dt>Boost Your Sales &amp; Cut Costs</dt>
+                                        <dd>Detailed reports allows you to optimize your business, use data and analytics to know how each item is performing.</dd>
+                                    </dl>
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    <dl><dt>Secure Payments</dt>
+                                        <dd>Full PCI DSS compliance, EMV encryption, and tokenization. No extra work, expert support team is available 24/7.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column is-6">
+                            <ul class="c-features-list has-text-white c-features-list--large-spaced">
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    <dl><dt>Speedy Checkout</dt>
+                                        <dd>Complete a sale in seconds by scanning the bar code or search your inventory for a simple checkout.</dd>
+                                    </dl>
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    <dl><dt>Fast Deposits</dt>
+                                        <dd>We get it, you want your money now. Receive your funds as soon as SAME DAY.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-min-hero section">
+                <div class="pg-min-hero__inner">
+                    <h3 class="is-size-3 is-size-2-desktop has-text-link has-text-weight-light has-text-centered">
+                        Let’s Go Shopping!
+                    </h3>
+                    <div class="has-text-centered">
+                        <button class="button is-primary is-outlined is-rounded is-uppercase modal-button" data-target="modal-ter">
+                            Contact sales
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="aliants-mobile-point-of-sale section">
+                <div class="pg-min-hero__inner container">
+                    <h3 class="is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-weight-light has-text-centered">
+                        Aliant’s Mobile Point of Sale
+                    </h3>
+                    <div class="has-text-centered content">
+                        Compact, stylish handheld smartPOS tablets by PAX that offer all the benefits of smartphoneswith the security of payment solutions.
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="pos-aliants__content columns is-vcentered">
+                        <div class="column is-6">
+                            <div class="content">
+                                <h4 class="is-size-4 has-text-link has-text-weight-light">
+                                    Handheld Mobile
+                                    <br>Tablet Terminal
+                                </h4>
+                                <h6 class="is-size-6 has-text-weight-bold">
+                                    PAX A920 - Cost $299.00 per device.
+                                </h6>
+                                <p class="has-text-black">
+                                    PAX A920 is the world’s first tablet mobile terminal, a fashionable and compact payment device powered by the Android operating platform. The A920 comes with a large high definition tablet colour display and a super fast thermal printer that is neatly hidden below so as to maximize screen usage for customer facing transactions.
+                                </p>
+                                <section class="pg-pos-check">
+                                    <div class="pg-pos-check__mobile-image"></div>
+                                    <div class="c-twoside-hero c-twoside-hero--left">
+                                        <div class="c-twoside-hero__content-box">
+                                            <div class="c-twoside-hero__content-box__content">
+                                                <ul class="c-features-list pg-features has-text-white">
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Unprecedented Security
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Multimedia Performance
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Exceptional Stability and Reliability
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="column is-6 c-right">
+                            <div class="image">
+                                <img src="./images/veriphone.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pos-aliants__content columns is-vcentered content-right">
+                        <div class="column is-6">
+                            <div class="content">
+                                <h4 class="is-size-4 has-text-link has-text-weight-light">
+                                    Paperless Handheld
+                                    <br>Mobile Tablet Terminal
+                                </h4>
+                                <h6 class="is-size-6 has-text-weight-bold">
+                                    PAX A60 - Cost $299.00 per device. 
+                                </h6>
+                                <p class="has-text-black">
+                                    Weighing only 300g, the A60 offers all the advantages of the A-series in a featherweight, elegant design. It is paperless, helping reduce your environmental footprint as well as stationery costs. With inbuilt 4G, WiFi and Bluetooth communication, the A60 can either be a standalone wireless device or an elegant in-store cordless desktop solution.
+                                </p>
+                                <section class="pg-pos-check">
+                                    <div class="pg-pos-check__mobile-image"></div>
+                                    <div class="c-twoside-hero c-twoside-hero--left">
+                                        <div class="c-twoside-hero__content-box">
+                                            <div class="c-twoside-hero__content-box__content">
+                                                <ul class="c-features-list pg-features has-text-white">
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Lightweight & Ergonomic
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Optional Charging & Printing Base
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        5MP Autofocus Camera with Flash
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="column is-6 c-right">
+                            <div class="image">
+                                <img src="./images/veriphone-2.png">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="pos-aliants__content columns is-vcentered">
+                        <div class="column is-6">
+                            <div class="content">
+                                <h4 class="is-size-4 has-text-link has-text-weight-light">
+                                    Portable Desktop
+                                    <br>Tablet Terminal
+                                </h4>
+                                <h6 class="is-size-6 has-text-weight-bold">
+                                    PAX A80 - Cost $199.00 per device. 
+                                </h6>
+                                <p class="has-text-black">
+                                    PAX A80, the most cost-effective in the A-series is versatile enough to work as a countertop or indoor portable device (given the optional backup battery). Full connectivity means the A80 is a reliable workhorse that will orcess payments safely and fast, even during the busiest hours.
+                                </p>
+                                <section class="pg-pos-check">
+                                    <div class="pg-pos-check__mobile-image"></div>
+                                    <div class="c-twoside-hero c-twoside-hero--left">
+                                        <div class="c-twoside-hero__content-box">
+                                            <div class="c-twoside-hero__content-box__content">
+                                                <ul class="c-features-list pg-features has-text-white">
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Unprecedented Security
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Exceptional Performance
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Countertop or Indoor Portable
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="column is-6 c-right">
+                            <div class="image">
+                                <img src="./images/veriphone-3.jpg">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="full-container aliant-has-point">
+                <div class="content">
+                    <h3 class="is-size-3 has-text-primary has-text-weight-light has-text-centered">
+                        Aliant has Point of Sale equipment designed for all the places where your customers shop.
+                    </h3>
+                    <button class="button is-primary is-outlined is-dark is-rounded is-uppercase modal-button" data-target="modal-ter">
+                        Contact sales now
+                    </button>
+                    <p class="is-uppercase has-text-light">see more equipment</p>
+                    <span class="icon has-text-info">
+                        <img src="./images/arrow-down-128.png">
+                    </span>
+                </div>
+            </section>
+            <section class="aliants-desktop-point-of-sale section">
+                <div class="aliants-desktop-title__content">
+                    <h2 class="is-size-2 has-text-link has-text-centered has-text-weight-light">
+                        Aliant’s Desktop Point of Sale
+                    </h2>
+                    <p class="has-text-centered has-text-black">PAX’s revolutionary retailer EPOS solutions that fully combine cash register and payment terminal. All you need to successfully run your store is kept under one roof, offering greater in-store elegance and efficiency.</p>
+                </div>
+                <div class="container">
+                    <div class="columns row-top  is-mobile">
+                        <div class="column is-4 is-full-mobile">
+                            <div class="content">
+                                <h4 class="is-size-4 has-text-link has-text-weight-light">
+                                    Elegant Desktop
+                                    <br>Retail Register
+                                </h4>
+                                <h6 class="is-size-6 has-text-weight-bold">
+                                    PAX E800 - Cost $999.00 per device. 
+                                </h6>
+                                <p class="has-text-black">
+                                    Elegance is everything in-store, yet cash registers never made for a stylish checkout experience, until today. PAX’s E800 is a visually striking game-changer. Gorgeous 15-inch HD touchscreen display with lightning fast performance.
+                                </p>
+                                <section class="pg-pos-check">
+                                    <div class="pg-pos-check__mobile-image"></div>
+                                    <div class="c-twoside-hero c-twoside-hero--left">
+                                        <div class="c-twoside-hero__content-box">
+                                            <div class="c-twoside-hero__content-box__content">
+                                                <ul class="c-features-list pg-features has-text-weight-bold">
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        All-in-one Integration
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Exceptional Performance
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Modular Design
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="column is-4 is-full-mobile">
+                            <div class="image">
+                                <img src="./images/desktop-retail-1.png">
+                            </div>
+                            
+                        </div>
+                        <div class="column is-4 is-full-mobile">
+                            <div class="image">
+                                <img src="./images/desktop-retail-2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-saperator"></div>
+                    <div class="columns is-centered row-down  is-mobile">
+                        <div class="column is-4 is-full-mobile  mobile-order-2">
+                            <div class="image">
+                                <img src="./images/powerful-retail-register.jpg">
+                            </div>
+                        </div>
+                        <div class="column is-4 is-full-mobile mobile-order-3">
+                            <div class="image">
+                                <img src="./images/desktop-device4.jpg">
+                            </div>
+                        </div>
+                        <div class="column is-4 is-full-mobile mobile-order-1">
+                            <div class="content">
+                                <h4 class="is-size-4 has-text-link has-text-weight-light">
+                                    Powerful & Compact
+                                    <br>Retail Register
+                                </h4>
+                                <h6 class="is-size-6 has-text-weight-bold">
+                                    PAX E500 - Cost $699.00 per device. 
+                                </h6>
+                                <p class="has-text-black">
+                                    PAX E500 comes with ingenuity quality & solid performance, equipped with multiple peripherals ports, large paper roll, technologies of auto-brightness setting, magic SR and grease proofing enabling smooth touch of screen.
+                                </p>
+                                <section class="pg-pos-check">
+                                    <div class="pg-pos-check__mobile-image"></div>
+                                    <div class="c-twoside-hero c-twoside-hero--left">
+                                        <div class="c-twoside-hero__content-box">
+                                            <div class="c-twoside-hero__content-box__content">
+                                                <ul class="c-features-list pg-features has-text-weight-bold">
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        All-in-one Housing
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        All-in-one Payment
+                                                    </li>
+                                                    <li data-animation-classes="">
+                                                        <span class="icon is-small has-text-primary">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        Seamless Transactions
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="full-container aliant-has-point">
+                <div class="content">
+                    <h3 class="is-size-3 has-text-primary has-text-weight-light has-text-centered">
+                        Aliant has self service equipment too!
+                    </h3>
+                    <button class="button is-primary is-outlined is-dark is-rounded is-uppercase modal-button" data-target="modal-ter">
+                        Contact sales now
+                    </button>
+                    <p class="is-uppercase has-text-light">see unattended equipment</p>
+                    <span class="icon has-text-info">
+                        <img src="./images/arrow-down-128.png">
+                    </span>
+                </div>
+            </section>
+            <section class="aliants-unattended-point-of-sale section container">
+                <div class="aliants-unattended-title__content">
+                    <h2 class="is-size-2 has-text-link has-text-centered has-text-weight-light">
+                        Aliant’s Unattended Point of Sale
+                    </h2>
+                    <p class="has-text-centered has-text-black">Designed by PAX to increase unattended sales, implement flawless security, and be impervious to environmental damage.</p>
+                </div>
+                <div class="columns row-top">
+                    <div class="column is-4 c-left">
+                        <div class="content">
+                            <h4 class="is-size-4 has-text-link has-text-weight-light">
+                                Exceptional In-Store
+                                <br>Self-Service Retail
+                                <br>Registers
+                            </h4>
+                            <h6 class="is-size-6 has-text-weight-bold">
+                                PAX SK800 & SK600
+                            </h6>
+                            <p class="has-text-black">
+                                Two easy-to-mount Android smart kiosks with fully integrated payment, offering shoppers a modern & interactive retail experience. Providing access to product information and promotions in a more engaging manner makes it easier for people to interact in a way that is efficient and familiar to them. Call in for pricing and installation options.
+                            </p>
+                            <section class="pg-pos-check">
+                                <div class="pg-pos-check__mobile-image"></div>
+                                <div class="c-twoside-hero c-twoside-hero--left">
+                                    <div class="c-twoside-hero__content-box">
+                                        <div class="c-twoside-hero__content-box__content">
+                                            <ul class="c-features-list pg-features has-text-weight-bold">
+                                                <li data-animation-classes="">
+                                                    <span class="icon is-small has-text-primary">
+                                                        <i class="fas fa-check"></i>
+                                                    </span>
+                                                    Modern & Interactive Retail Experience
+                                                </li>
+                                                <li data-animation-classes="">
+                                                    <span class="icon is-small has-text-primary">
+                                                        <i class="fas fa-check"></i>
+                                                    </span>
+                                                    Anti-Vandalism Capacitive Touchscreen
+                                                </li>
+                                                <li data-animation-classes="">
+                                                    <span class="icon is-small has-text-primary">
+                                                        <i class="fas fa-check"></i>
+                                                    </span>
+                                                    Exceptional Performance
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="column is-4 c-center">
+                        <div class="image">
+                            <img src="./images/selfservice-register-1.png">
+                        </div>
+                        <div class="image-caption has-text-black has-text-weight-bold is-hidden-tablet has-text-centered mr-top">
+                          23.8 Inch Touchscreen Display
+                        </div>
+                    </div>
+                    <div class="column is-4 c-right">
+                        <div class="image">
+                            <img src="./images/selfservice-register-2.png">
+                        </div>
+                        <div class="image-caption has-text-black has-text-weight-bold is-hidden-tablet">
+                          15 Inch Touchscreen Display
+                        </div>
+                        <p class="has-text-black is-hidden-mobile">
+                            <span class="icon has-text-link">
+                                <i class="fa fa-caret-up"></i>
+                            </span>
+                            15 Inch Touchscreen Display
+                          </p>
+                        <p class="has-text-black is-hidden-mobile">
+                            <span class="icon has-text-link">
+                                <i class="fa fa-caret-left"></i>
+                            </span>
+                        23.8 Inch Touchscreen Display</p>
+                    </div>
+                </div>
+            </section>
+            <section class="c-point-of-sale-pricing">
+                <div class="c-point-of-sale-pricing__mobile-image"></div>
+                <div class="c-twoside-hero c-twoside-hero--right">
+                    <div class="c-twoside-hero__content-box">
+                        <div class="c-twoside-hero__content-box__content">
+                            <h2 class="is-size-3 is-size-2-tablet is-size-1-widescreen has-text-centered has-text-left-tablet has-text-primary has-text-weight-light">
+                                Pricing
+                            </h2>
+                            <ul class="c-features-list point-of-sale-features has-text-white">
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Do you have a smart phone ? you can process all your <br>transactions with our mobile card reader and best of all its FREE.
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Aliant Pax A80 desktop tablet terminal purchase fast and <br>cost effective $199.00
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Aliant Pax A920 handheld mobile tablet terminal simple <br>and fast $299.00
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Aliant Pax E500 compact retail register easy to use and <br>set up $ 699.00
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Aliant Pax E800 Desktop retail register 15" color screen, out <br>of the box ready to go plug and pay. $999.00
+                                </li>
+                            </ul>
+                            <button class="button is-cta is-dark is-primary is-rounded is-uppercase modal-button" data-target="modal-ter">
+                                Get Started Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-min-hero section">
+                <div class="pg-min-hero__inner">
+                    <h3 class="is-size-3 is-size-2-desktop has-text-link has-text-weight-light has-text-centered">
+                        Get in Touch to Learn More
+                        <br>About Aliant’s Point of Sale Today!
+                    </h3>
+                    <div class="has-text-centered">
+                        <button class="button is-primary is-outlined is-rounded is-uppercase modal-button" data-target="modal-ter">
+                            Contact us
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+                <section class="c-footer-menu section">
+                    <div class="container">
+                        <div class="c-footer-menu__logo">
+                            <div class="image">
+                                <img src="./images/aliant-icon.png" data-scroll="" data-animation-classes="jackInTheBox" alt="Aliant Icon">
+                            </div>
+                            <div class="c-footer-menu__social-icons">
+                                <a href="https://www.facebook.com/AliantPayments/" target="_blank" class="c-footer-menu__social-icon">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fab fa-2x fa-facebook-square"></i>
+                                    </span>
+                                </a>
+                                <a href="https://twitter.com/AliantPayment" target="_blank" class="c-footer-menu__social-icon">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fab fa-2x fa-twitter"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/aliant-payment-systems-inc/" target="_blank" class="c-footer-menu__social-icon">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fab fa-2x fa-linkedin"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mobile-menu columns is-multiline is-1 is-mobile">
+                            <div class="business-links column is-7-tablet">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="mobile-menu__toggable" data-scroll="" data-animation-classes="fadeInUp">
+                                            <div class="mobile-menu__toggle" data-target="business-menu">
+                                                <span class="icon">
+                                                    <i class="fas fa-caret-down"></i>
+                                                </span>
+                                                Business
+                                            </div>
+                                            <div id="business-menu" class="mobile-menu__toggable__links">
+                                                <ul class="c-footer-menu__items has-text-white">
+                                                    <li>
+                                                        <a href="bars-lounges.html">Bars &amp; lounges</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="beauty.html">Beauty professionals</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="counter.html">Counter &amp; table service</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="enterprises.html">Enterprises</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="ach-echeck.html">E-Check &amp; ACH processing</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="enterprise-financial.html">Enterprise for Financial Institutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="giftcards.html">Gift &amp; loyalty cards</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="federal.html">Federal, State &amp; Government Agencies</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="grocery.html">Grocery &amp; organic markets</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="health.html">Health &amp; fitness</a>
+                                                    </li>
+                                                    <li class="is-hidden-tablet">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="home-repair.html">Home &amp; repair</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="hospital.html">Hospitals &amp; medical practices</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="gas-convenience.html">Petroleum &amp; Convenience Stores</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="professional-services.html">Professional Service Businesses</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="game-time.html">Professional Sports</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="retail.html">Retail</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="specialized-merchant.html">Specialized Merchants</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="airline-travel-services.html">Travel - airlines</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="cruise.html">Travel - cruiselines</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="resorts.html">Travel - resorts</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-hidden-mobile">
+                                        <div class="mobile-menu__toggle" data-target="business-menu">
+                                            &nbsp;
+                                        </div>
+                                        <ul class="c-footer-menu__items has-text-white" data-scroll="" data-animation-classes="fadeInUp">
+                                            <li>
+                                                <a href="home-repair.html">Home &amp; repair</a>
+                                            </li>
+                                            <li>
+                                                <a href="hospital.html">Hospitals &amp; medical practices</a>
+                                            </li>
+                                            <li>
+                                                <a href="gas-convenience.html">Petroleum &amp; Convenience Stores</a>
+                                            </li>
+                                            <li>
+                                                <a href="professional-services.html">Professional Service Businesses</a>
+                                            </li>
+                                            <li>
+                                                <a href="game-time.html">Professional Sports</a>
+                                            </li>
+                                            <li>
+                                                <a href="retail.html">Retail</a>
+                                            </li>
+                                            <li>
+                                                <a href="specialized-merchant.html">Specialized Merchants</a>
+                                            </li>
+                                            <li>
+                                                <a href="airline-travel-services.html">Travel - airlines</a>
+                                            </li>
+                                            <li>
+                                                <a href="cruise.html">Travel - cruiselines</a>
+                                            </li>
+                                            <li>
+                                                <a href="resorts.html">Travel - resorts</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="mobile-menu__toggable" data-scroll="" data-animation-classes="fadeInUp">
+                                            <div class="mobile-menu__toggle" data-target="resources-menu">
+                                                <span class="icon">
+                                                    <i class="fas fa-caret-down"></i>
+                                                </span>
+                                                Resources
+                                            </div>
+                                            <div id="resources-menu" class="mobile-menu__toggable__links">
+                                                <ul class="c-footer-menu__items has-text-white">
+                                                    <li>
+                                                        <a href="./developers.html">Developer portal</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-ter2" aria-haspopup="true">Documentation</a> <!-- Full screen popup display iframe -->
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://gitlab.com/aliantpayments/clients/aliant-jvm-client" target="_blank">Gitlab</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-ter2" aria-haspopup="true">Online Payment APIs</a> <!-- Full screen popup display iframe -->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="mobile-menu__toggable" data-scroll="" data-animation-classes="fadeInUp">
+                                            <div class="mobile-menu__toggle" data-target="about-menu">
+                                                <span class="icon">
+                                                    <i class="fas fa-caret-down"></i>
+                                                </span>
+                                                About Aliant
+                                            </div>
+                                            <div id="about-menu" class="mobile-menu__toggable__links">
+                                                <ul class="c-footer-menu__items has-text-white">
+                                                    <li>
+                                                        <a href="./career.html">Careers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-blog" aria-haspopup="true">Merchant blog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./partners.html">Partner with Aliant</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./support.html">Support</a>
+                                                    </li>
+                                                    <li>
+                                                        <!-- <a class="modal-button" data-target="modal-testimonials" aria-haspopup="true">Testimonials</a> -->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="content has-text-centered has-text-white is-size-7">
+                        <p>&copy; 2019 ALIANT PAYMENTS. ALL RIGHTS RESERVED. <a href="./sitemap.html" class="has-text-white">SITEMAP</a> | <a href="./privacy-policy.html" class="has-text-white">PRIVACY POLICY</a></p>
+                    </div>
+                </footer>
+            </div>
+            <div class="modal" id="modal-ter">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <section class="modal-card-body is-dark">
+                        <button class="delete" aria-label="close"></button>
+                        <h1 class="is-size-3 is-size-2-desktop color-green has-text-centered is-size-1-fullhd has-text-weight-light is-uppercase is-centered">Start Accepting Payments</h1>
+                        <p class="has-text-white has-text-centered">Fill out the form below to begin your registration process.</p>
+                        <form method="post" class="support_note_form">
+                            <div class="form-container m-t-top">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" name="cname" placeholder="Company Name" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" name="fname" placeholder="Your Full Name" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column is-full">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" name="address" placeholder="Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" type="tel" name="phone" placeholder="Phone" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" type="email" name="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="is-centered has-text-centered m-t-top">
+                                    <button type="submit" class="button is-primary is-gradient is-rounded is-uppercase note_form_btn">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div class="modal is-full" id="modal-ter2">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <button class="delete" aria-label="close"></button>
+                    <div class="api_full">
+                        <iframe src="https://aliant.docs.stoplight.io"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="modal is-full" id="modal-blog">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <button class="delete" aria-label="close"></button>
+                    <div class="api_full">
+                        <iframe src="https://media.aliantpayments.com/what-merchants-must-know-about-cryptocurrency/"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="modal is-full" id="modal-testimonials">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <button class="delete" aria-label="close"></button>
+                    <div class="api_full">
+                        <iframe src="https://media.aliantpayments.com/about-us/testimonials/"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="c-back2top button">
+        <span class="icon is-medium has-text-white">
+            <i class="fas fa-2x fa-arrow-up"></i>
+        </span>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    
+</body>
+
+</html>

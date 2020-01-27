@@ -1,0 +1,30 @@
+stages:
+  - deploy
+
+Staging Deploy:
+  image: python:latest
+  stage: deploy
+  environment: 
+    name: staging
+  script:
+    - echo "Running deployment"
+    - pip install awscli
+    - pwd
+    - ls -la
+    - aws s3 cp /builds/shokworks/shokworks_web/aliant-payments/landing/main s3://$AWS_S3_BUCKET_NAME/ --recursive
+  only:
+    - staging
+
+Master Deploy:
+  image: python:latest
+  stage: deploy
+  environment: 
+    name: master
+  script:
+    - echo "Running deployment"
+    - pip install awscli
+    - pwd
+    - ls -la
+    - aws s3 cp /builds/shokworks/shokworks_web/aliant-payments/landing/main s3://$AWS_S3_BUCKET_NAME/ --recursive
+  only:
+    - master

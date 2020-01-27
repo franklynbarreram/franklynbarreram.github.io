@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Aliant Payments</title>
+    <meta name="description" content="Aliant Payments">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.html">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 11]> <p class="browsehappy"> You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. </p> <![endif]-->
+    <div class="page-payment-gateway">
+        <section class="c-hero hero is-fullheight">
+            <div class="hero-head">
+                <header class="c-header">
+                    <nav id="mainNavbar" class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
+                        <div class="container">
+                            <div class="navbar-brand">
+                                <a href="index.html" class="navbar-item" data-animation-classes="fadeInDown">
+                                    <img src="images/aliant-logo.png" alt="aliant logo">
+                                </a>
+                                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div id="navMenu" class="navbar-menu">
+                                <div class="navbar-end">
+                                    <div class="navbar-item navbar-item--current" data-animation-classes="fadeInDown">
+                                        <a href="payment-gateway.html" target="" class="has-text-white">
+                                            <span class="menu__text">Payment Gateway</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item" data-animation-classes="fadeInDown">
+                                        <a href="cryptobucks.html" target="" class="has-text-white">
+                                            <span class="menu__text">Crypto Payments</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item" data-animation-classes="fadeInDown">
+                                        <a href="point-of-sale.html" target="" class="has-text-white">
+                                            <span class="menu__text">Point of Sale</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item" data-animation-classes="fadeInDown">
+                                        <a href="developers.html" target="" class="has-text-white">
+                                            <span class="menu__text">Developers</span>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-item init-animated" data-animation-classes="fadeInDown">
+                                        <!--
+                                          <a href="https://aliantpay.io" target="_blank" class="has-text-white link--highlighted">
+                                       -->
+                                        <a class="has-text-white link--highlighted">
+                                           <span class="menu__text">Sign In</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="pg-hero">
+                        <div class="columns">
+                            <div class="column pg-hero__left is-6 is-offset-1">
+                                <h2 class="is-size-3 is-size-1-fullhd has-text-info has-text-weight-light is-uppercase spaced-title">
+                                    Welcome to
+                                    <span class="is-sr-only">Titan</span>
+                                </h2>
+                                <div class="image">
+                                    <img src="images/titan-text.png" alt="Titan fancy typography">
+                                </div>
+                            </div>
+                            <div class="column pg-hero__right is-5">
+                                <h1 class="is-size-3 is-size-1-fullhd has-text-weight-light">
+                                    Accept Every Payment.
+                                    <br>Simply and Securely.
+                                </h1>
+                                <button class="button is-primary is-outlined is-dark is-rounded is-uppercase modal-button" data-target="modal-ter">
+                                    Start Accepting Payments
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-scroll-button">
+                <a href="#after-hero-content" class="image">
+                    <img class="animated infinite bounce slow" src="images/scroll-icon.png" alt="scroll icon">
+                </a>
+            </div>
+        </section>
+        <div id="after-hero-content">
+            <section class="pg-min-hero pg-min-hero--titan section">
+                <div class="pg-min-hero__inner">
+                    <div class="titan-logo--small image">
+                        <img src="images/titan-text--small--gradient.png" alt="Titan logo">
+                    </div>
+                    <h3 class="is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-weight-light has-text-centered">
+                        The Future of Payment Management
+                    </h3>
+                    <p class="has-text-centered is-size-5-desktop">
+                        <strong>TITAN</strong>
+                        by Aliant Payments is a
+                        <strong>new technology payments platform</strong>
+                        designed for maximizing growth while lowering costs.
+                    </p>
+                </div>
+            </section>
+            <section class="pg-business section full-container">
+                <div class="container">
+                    <h2 class="has-text-centered has-text-primary is-size-3 is-size-2-desktop is-size-1-widescreen has-text-weight-light">
+                        Wherever You Do Business, We Do Too
+                    </h2>
+                    <ul class="pg-business__features has-text-white has-text-centered columns is-mobile is-multiline">
+                        <li class="column">
+                            <div class="pg-circle-icon pg-circle-icon--store"></div>
+                            <div class="pg-business__features__feature is-size-5 is-size-4-widescreen">
+                                At Your Business or On-the-go
+                            </div>
+                        </li>
+                        <li class="column">
+                            <div class="pg-circle-icon pg-circle-icon--ecommerce"></div>
+                            <div class="pg-business__features__feature is-size-5 is-size-4-widescreen">
+                                On Your Business Website
+                            </div>
+                        </li>
+                        <li class="column">
+                            <div class="pg-circle-icon pg-circle-icon--invoice"></div>
+                            <div class="pg-business__features__feature is-size-5 is-size-4-widescreen">
+                                By Invoice From Anywhere
+                            </div>
+                        </li>
+                        <li class="column">
+                            <div class="pg-circle-icon pg-circle-icon--mobile-cc"></div>
+                            <div class="pg-business__features__feature is-size-5 is-size-4-widescreen">
+                                Virtually on Your Device
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="pg-min-hero section">
+                <div class="pg-min-hero__inner">
+                    <h3 class="is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-weight-light has-text-centered">
+                        Get Paid Fast and Save Time Doing It
+                    </h3>
+                    <div class="has-text-centered">
+                        <button class="button is-primary is-outlined is-rounded is-uppercase modal-button" data-target="modal-ter">
+                            Accept Payments Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-titan-graph section section--full full-container">
+                <div class="container">
+                    <h3 class="is-size-3 is-size-2-desktop is-size-1-widescreen has-text-white has-text-weight-light has-text-centered">What Does TITAN Do?</h3>
+                   <div class="pg-titan-graph__tree columns is-gapless has-text-white is-relative">
+        <div class="column pg-titan-graph__left is-relative">
+          <div class="pg-titan-graph__upper pg-titan-graph__item">
+            Process Multiple Merchant Accounts
+          </div>
+
+          <div class="pg-titan-graph__outer pg-titan-graph__leaf">
+            <div class="pg-titan-graph__inner pg-titan-graph__leaf">
+              <div class="pg-titan-graph__inner__item pg-titan-graph__item">Integrate to Accounting Software</div>
+              <div class="pg-titan-graph__inner__item pg-titan-graph__item">
+                <dl>
+                  <dt>Integrate Custom Operating Software</dt>
+                  <dd>Business Management</dd>
+                </dl>
+              </div>
+              <div class="pg-titan-graph__inner__item pg-titan-graph__item">
+                <dl>
+                  <dt>Integrate Point of Sale</dt>
+                  <dd>Hardware, Table Top</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="pg-titan-graph__bottom pg-titan-graph__item">
+            <dl>
+              <dt>Integrate Mobile Devices for Processing Sales</dt>
+              <dd>iPad, iPhone, Droid</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="pg-titan-graph__logo image">
+          <img src="./images/titan-circle-logo.png" alt="">
+        </div>
+
+        <div class="column pg-titan-graph__right is-relative">
+          <div class="pg-titan-graph__upper pg-titan-graph__item">
+            Data Analytics
+          </div>
+
+          <div class="pg-titan-graph__outer pg-titan-graph__leaf">
+            <div class="pg-titan-graph__inner pg-titan-graph__leaf">
+              <div class="pg-titan-graph__inner__item pg-titan-graph__item">Run Gift &amp; Loyalty Programs</div>
+              <div class="pg-titan-graph__inner__item pg-titan-graph__item">
+                <dl>
+                  <dt>Process Major Credit &amp; Debit ACH</dt>
+                  <dd>Visa, MC, AMEX, Discover, ACH</dd>
+                </dl>
+              </div>
+              <div class="pg-titan-graph__inner__item pg-titan-graph__item">
+                <dl>
+                  <dt>Process Alternative Payments</dt>
+                  <dd>Crypto, AliPay, WeChat, Apple Pay, Google Pay</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="pg-titan-graph__bottom pg-titan-graph__item">
+            Integrate E-commerce Site
+          </div>
+        </div>
+      </div>
+                </div>
+            </section>
+            <section class="pg-min-hero section">
+                <div class="pg-min-hero__inner">
+                    <h3 class="is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-weight-light has-text-centered">
+                        Accept All Payment Types Easily & Securely
+                    </h3>
+                    <div class="has-text-centered">
+                        <button class="button is-primary is-outlined is-rounded is-uppercase modal-button" data-target="modal-ter">
+                            Accept Payments Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-virtual section full-container">
+                <div class="container">
+                    <h2 class="is-size-3 is-size-2-tablet is-size-1-widescreen has-text-centered has-text-primary has-text-weight-light">
+                        Payment Gateway/Virtual Terminal
+                    </h2>
+                    <div class="pg-virtual__content columns">
+                        <div class="has-text-white column is-7-tablet is-offset-5-tablet is-5-widescreen is-offset-6-widescreen">
+                            <p>Process payments for clients that are not in your place of business via virtual terminal. Email an invoice to your customer and receive payment.</p>
+                            <h3 class="is-size-4 has-text-weight-semibold">Do you have a custom business software?</h3>
+                            <ul class="c-features-list pg-features has-text-white">
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    Integrate the Titan platform with your current operating software and create a seamless payment process
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    Connect all of your stationary & mobile payment devices
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    Bring your website to life by integrating Titan to your E-commerce shopping cart via simple API integration and plug in options
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-large icon--circle">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-2x fa-circle fa-stack-1x has-text-primary"></i>
+                                            <i class="fas fa-arrow-right fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </span>
+                                    Titan can upload all transaction data to your current accounting software
+                                </li>
+                            </ul>
+                            <div class="has-text-centered has-text-left-tablet">
+                                <button class="button is-cta is-dark is-primary is-rounded is-uppercase modal-button" data-target="modal-ter">
+                                    Accept Payments Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-alternative-options section full-container">
+                <div class="container">
+                    <h3 class="pg-title-underscore is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-weight-light has-text-centered">
+                        Process Alternative Payment Options
+                    </h3>
+                    <div class="pg-alternative-options__logos columns is-vcentered is-centered is-mobile is-multiline">
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/alipay-logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/google-pay-logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/apple-pay-logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/wechat-logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/bitcoin-logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/litecoin-logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="pg-alternative-options__logos__item image">
+                                <img src="images/logos/ethereum-logo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-benefits section section--full full-container">
+                <div class="pg-benefits__mobile-image"></div>
+                <div class="c-twoside-hero c-twoside-hero--left">
+                    <div class="c-twoside-hero__content-box">
+                        <div class="c-twoside-hero__content-box__content">
+                            <h2 class="is-size-3 is-size-2-tablet is-size-1-widescreen has-text-centered has-text-left-tablet has-text-primary has-text-weight-light">
+                                Benefits
+                            </h2>
+                            <ul class="c-features-list pg-features has-text-white">
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Credit, debit, ACH, & Cryptocurrency all in one platform
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Customer database in secure portal
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Easily manage multiple revenue streams i.e. mobile, POS, Ecommerce, and MOTO
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Custom API integrations that are developer friendly. Plug-ins available
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Enterprise level solutions
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Level 1 PCI Security
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Digital wallet options
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    SMS payment invoicing
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Hardware and software integrations
+                                </li>
+                            </ul>
+                            <button class="button is-cta is-dark is-primary is-rounded is-uppercase modal-button" data-target="modal-ter">
+                                Accept Payments Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-accepts section">
+                <div class="container">
+                    <h2 class="pg-title-underscore is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-centered has-text-weight-light">
+                        Aliant Proudly Accepts
+                    </h2>
+                    <ul class="pg-accepts__brands columns has-text-centered has-text-black is-mobile is-multiline">
+                        <li class="column is-3-tablet is-2-desktop is-offset-1-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--visa"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Visa
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--mastercard"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Mastercard
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--amex"></div>
+                            <div class="pg-accepts__brands__brand">
+                                American Express
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--discover"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Discover
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--ach-transfer"></div>
+                            <div class="pg-accepts__brands__brand">
+                                ACH Transfer
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop is-offset-1-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--apple-pay"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Apple Pay<sup>&reg;</sup>
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--google-pay"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Google Pay<sup>&trade;</sup>
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--bitcoin"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Bitcoin
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--ethereum"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Ethereum
+                            </div>
+                        </li>
+                        <li class="column is-3-tablet is-2-desktop">
+                            <div class="pg-circle-icon pg-circle-icon--litecoin"></div>
+                            <div class="pg-accepts__brands__brand">
+                                Litecoin
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="pg-pricing section full-container section--full">
+                <div class="pg-pricing__mobile-image"></div>
+                <div class="c-twoside-hero c-twoside-hero--right">
+                    <div class="c-twoside-hero__content-box">
+                        <div class="c-twoside-hero__content-box__content">
+                            <h2 class="is-size-3 is-size-2-tablet is-size-1-widescreen has-text-centered has-text-left-tablet has-text-primary has-text-weight-light">
+                                Pricing
+                            </h2>
+                            <ul class="c-features-list pg-features has-text-white">
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    2.90% + $0.30 per transaction, corporate cards billed additional 
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Payment types charged individually pay as you go for each individual transaction
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Qualifying transactions at 2.5% + $0.30 a transaction
+                                </li>
+                                <li data-animation-classes="">
+                                    <span class="icon is-small has-text-primary">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    Recurring billing
+                                </li>
+                            </ul>
+                            <button class="button is-cta is-dark is-primary is-rounded is-uppercase modal-button" data-target="modal-ter">
+                                Accept Payments Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pg-min-hero pg-min-hero--bottom section">
+                <div class="pg-min-hero__inner">
+                    <h3 class="is-size-3 is-size-2-desktop is-size-1-widescreen has-text-link has-text-weight-light has-text-centered">
+                        Start Accepting Payments with Aliant Today!
+                    </h3>
+                    <div class="has-text-centered">
+                        <button class="button is-primary is-outlined is-rounded is-uppercase modal-button" data-target="modal-ter">
+                            Accept Payments Now</button>
+                    </div>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+                <section class="c-footer-menu section">
+                    <div class="container">
+                        <div class="c-footer-menu__logo">
+                            <div class="image">
+                                <img src="./images/aliant-icon.png" data-scroll="" data-animation-classes="jackInTheBox" alt="Aliant Icon">
+                            </div>
+                            <div class="c-footer-menu__social-icons">
+                                <a href="https://www.facebook.com/AliantPayments/" target="_blank" class="c-footer-menu__social-icon">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fab fa-2x fa-facebook-square"></i>
+                                    </span>
+                                </a>
+                                <a href="https://twitter.com/AliantPayment" target="_blank" class="c-footer-menu__social-icon">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fab fa-2x fa-twitter"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/aliant-payment-systems-inc/" target="_blank" class="c-footer-menu__social-icon">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fab fa-2x fa-linkedin"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mobile-menu columns is-multiline is-1 is-mobile">
+                            <div class="business-links column is-7-tablet">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="mobile-menu__toggable" data-scroll="" data-animation-classes="fadeInUp">
+                                            <div class="mobile-menu__toggle" data-target="business-menu">
+                                                <span class="icon">
+                                                    <i class="fas fa-caret-down"></i>
+                                                </span>
+                                                Business
+                                            </div>
+                                            <div id="business-menu" class="mobile-menu__toggable__links">
+                                                <ul class="c-footer-menu__items has-text-white">
+                                                    <li>
+                                                        <a href="bars-lounges.html">Bars &amp; lounges</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="beauty.html">Beauty professionals</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="counter.html">Counter &amp; table service</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="enterprises.html">Enterprises</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="ach-echeck.html">E-Check &amp; ACH processing</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="enterprise-financial.html">Enterprise for Financial Institutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="giftcards.html">Gift &amp; loyalty cards</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="federal.html">Federal, State &amp; Government Agencies</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="grocery.html">Grocery &amp; organic markets</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="health.html">Health &amp; fitness</a>
+                                                    </li>
+                                                    <li class="is-hidden-tablet">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="home-repair.html">Home &amp; repair</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="hospital.html">Hospitals &amp; medical practices</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="gas-convenience.html">Petroleum &amp; Convenience Stores</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="professional-services.html">Professional Service Businesses</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="game-time.html">Professional Sports</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="retail.html">Retail</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="specialized-merchant.html">Specialized Merchants</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="airline-travel-services.html">Travel - airlines</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="cruise.html">Travel - cruiselines</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="resorts.html">Travel - resorts</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-hidden-mobile">
+                                        <div class="mobile-menu__toggle" data-target="business-menu">
+                                            &nbsp;
+                                        </div>
+                                        <ul class="c-footer-menu__items has-text-white" data-scroll="" data-animation-classes="fadeInUp">
+                                            <li>
+                                                <a href="home-repair.html">Home &amp; repair</a>
+                                            </li>
+                                            <li>
+                                                <a href="hospital.html">Hospitals &amp; medical practices</a>
+                                            </li>
+                                            <li>
+                                                <a href="gas-convenience.html">Petroleum &amp; Convenience Stores</a>
+                                            </li>
+                                            <li>
+                                                <a href="professional-services.html">Professional Service Businesses</a>
+                                            </li>
+                                            <li>
+                                                <a href="game-time.html">Professional Sports</a>
+                                            </li>
+                                            <li>
+                                                <a href="retail.html">Retail</a>
+                                            </li>
+                                            <li>
+                                                <a href="specialized-merchant.html">Specialized Merchants</a>
+                                            </li>
+                                            <li>
+                                                <a href="airline-travel-services.html">Travel - airlines</a>
+                                            </li>
+                                            <li>
+                                                <a href="cruise.html">Travel - cruiselines</a>
+                                            </li>
+                                            <li>
+                                                <a href="resorts.html">Travel - resorts</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="mobile-menu__toggable" data-scroll="" data-animation-classes="fadeInUp">
+                                            <div class="mobile-menu__toggle" data-target="resources-menu">
+                                                <span class="icon">
+                                                    <i class="fas fa-caret-down"></i>
+                                                </span>
+                                                Resources
+                                            </div>
+                                            <div id="resources-menu" class="mobile-menu__toggable__links">
+                                                <ul class="c-footer-menu__items has-text-white">
+                                                    <li>
+                                                        <a href="./developers.html">Developer portal</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-ter2" aria-haspopup="true">Documentation</a> <!-- Full screen popup display iframe -->
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://gitlab.com/aliantpayments/clients/aliant-jvm-client" target="_blank">Gitlab</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-ter2" aria-haspopup="true">Online Payment APIs</a> <!-- Full screen popup display iframe -->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="mobile-menu__toggable" data-scroll="" data-animation-classes="fadeInUp">
+                                            <div class="mobile-menu__toggle" data-target="about-menu">
+                                                <span class="icon">
+                                                    <i class="fas fa-caret-down"></i>
+                                                </span>
+                                                About Aliant
+                                            </div>
+                                            <div id="about-menu" class="mobile-menu__toggable__links">
+                                                <ul class="c-footer-menu__items has-text-white">
+                                                    <li>
+                                                        <a href="./career.html">Careers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-blog" aria-haspopup="true">Merchant blog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./partners.html">Partner with Aliant</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./support.html">Support</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="modal-button" data-target="modal-testimonials" aria-haspopup="true">Testimonials</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="content has-text-centered has-text-white is-size-7">
+                        <p>&copy; 2019 ALIANT PAYMENTS. ALL RIGHTS RESERVED. <a href="./sitemap.html" class="has-text-white">SITEMAP</a> | <a href="./privacy-policy.html" class="has-text-white">PRIVACY POLICY</a></p>
+                    </div>
+                </footer>
+            </div>
+            <div class="modal" id="modal-ter">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <section class="modal-card-body is-dark">
+                        <button class="delete" aria-label="close"></button>
+                        <h1 class="is-size-3 is-size-2-desktop color-green has-text-centered is-size-1-fullhd has-text-weight-light is-uppercase is-centered">Start Accepting Payments</h1>
+                        <p class="has-text-white has-text-centered">Fill out the form below to begin your registration process.</p>
+                        <form method="post" class="support_note_form">
+                            <div class="form-container m-t-top">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" name="cname" placeholder="Company Name" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" name="fname" placeholder="Your Full Name" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column is-full">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" name="address" placeholder="Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" type="tel" name="phone" placeholder="Phone" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-primary single-line" type="email" name="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="is-centered has-text-centered m-t-top">
+                                    <button type="submit" class="button is-primary is-gradient is-rounded is-uppercase note_form_btn">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div class="modal is-full" id="modal-ter2">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <button class="delete" aria-label="close"></button>
+                    <div class="api_full">
+                        <iframe src="https://aliant.docs.stoplight.io"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="modal is-full" id="modal-blog">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <button class="delete" aria-label="close"></button>
+                    <div class="api_full">
+                        <iframe src="https://media.aliantpayments.com/what-merchants-must-know-about-cryptocurrency/"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="modal is-full" id="modal-testimonials">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <button class="delete" aria-label="close"></button>
+                    <div class="api_full">
+                        <iframe src="https://media.aliantpayments.com/about-us/testimonials/"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="c-back2top button">
+        <span class="icon is-medium has-text-white">
+            <i class="fas fa-2x fa-arrow-up"></i>
+        </span>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    
+</body>
+
+</html>
